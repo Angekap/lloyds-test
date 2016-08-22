@@ -1,0 +1,137 @@
+/* This would be compiled but there was too much to do.. */
+
+body {
+	font: 20px/36px "Helvetica,Arial,sans-serif";
+	font-weight: normal;
+	color: #0c332f;
+}
+
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #e4effe;
+	background-color: #008c85;
+	padding: 5px;
+}
+
+a:link,
+a:active,
+a:hover {
+	color: #8c6300;
+}
+
+table {
+	min-width: 50%;
+}
+
+table.offset0 tbody,
+table.offset1 tbody,
+table.offset2 tbody {
+	transform: translateX(0);
+}
+
+table th,
+table td {
+	margin: 0;
+	padding: 5px;
+}
+
+table th {
+	text-align: left;
+}
+
+table tr:nth-child(odd) td {
+	background-color: #eee;
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: 24px;
+		background-color: #f9fbd0;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	table {
+		min-width: 100%;
+		overflow: hidden;
+	}
+
+	table thead {
+		display: none;
+	}
+
+	table.offset0 tbody {
+		transform: translateX(0);
+	}
+
+	table.offset1 tbody {
+		transform: translateX(-33%);
+	}
+
+	table.offset2 tbody {
+		transform: translateX(-66%);
+	}
+
+	table tbody {
+		width: 300%;
+    	display: block;
+	}
+
+	table tr {
+		width: 33%;
+		display: block;
+		float: left;
+	}
+
+	table tr:nth-child(odd) td {
+		background-color: #fff;
+	}
+
+	table td {
+		text-align: center;
+		display: block;
+		background-color: #fff;
+	}
+
+	table tr td:nth-child(odd) {
+		background-color: #eee;
+	}
+
+	table tr td:nth-child(1) {
+		background-color: #ddd;
+	}
+
+	table td:before {
+		/*content: attr(label)": ";*/
+		display: inline-block;
+	}
+
+	#prev {
+		display: inline-block;
+		float: left;
+	}
+
+	#next {
+		display: inline-block;
+		float: right;
+	}
+}
